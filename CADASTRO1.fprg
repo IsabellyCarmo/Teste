@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="AREA"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-21 11:14:32 "/>
+        <attribute name="created" value="QWx1bm87VVBMMi0wMEE7MjAyNS0wMi0yMTsiMDc6NTM6MDMgIjsyMTk1"/>
+        <attribute name="edited" value="QWx1bm87VVBMMi0wMEE7MjAyNS0wMi0yMTsiMTE6MTQ6MzIgIjsyOzIyOTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;CADASTRO&quot;" newline="True"/>
+            <output expression="&quot;DIGITE SEU NOME&quot;" newline="True"/>
+            <declare name="NOME" type="String" array="False" size=""/>
+            <input variable="NOME"/>
+            <output expression="&quot;DIGITE SEU SOBRENOME&quot;" newline="True"/>
+            <declare name="SOBRENOME" type="String" array="False" size=""/>
+            <input variable="SOBRENOME"/>
+            <output expression="&quot;DIGITE SEU CPF&quot;" newline="True"/>
+            <declare name="CPF" type="String" array="False" size=""/>
+            <input variable="CPF"/>
+            <output expression="&quot;DIGITE SUA IDADE&quot;" newline="True"/>
+            <declare name="IDADE" type="Integer" array="False" size=""/>
+            <input variable="IDADE"/>
+            <output expression="&quot;DIGITE SEU ENDERE&#199;O&quot;" newline="True"/>
+            <declare name="END" type="String" array="False" size=""/>
+            <input variable="END"/>
+            <output expression="&quot;VOCE TEM TELEFONE FIXO?&quot;" newline="True"/>
+            <declare name="PERG" type="String" array="False" size=""/>
+            <input variable="PERG"/>
+            <if expression="PERG==&quot;SIM&quot;">
+                <then>
+                    <output expression="&quot;DIGITE SEU TELEFONE&quot;" newline="True"/>
+                    <declare name="CONT" type="String" array="False" size=""/>
+                    <input variable="CONT"/>
+                    <output expression="&quot;SEU TELEFONE &#201; :&quot; &amp;CONT" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;SEU NOME &#201;: &quot; &amp; NOME &amp; &quot; &quot; &amp;&#13;&#10;&quot;SEU SOBRENOME &#201;: &quot; &amp; NOME &amp; &quot; &quot; &amp;&#13;&#10;&quot;SEU CPF &#201;: &quot; &amp; NOME &amp; &quot; &quot; &amp;&#13;&#10;&quot;SUA IDADE &#201;: &quot; &amp; NOME &amp; &quot; &quot; &amp;&#13;&#10;&quot;SEU END &#201;: &quot; &amp; NOME &amp; &quot; &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
