@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="blink"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-07 09:25:48 "/>
+        <attribute name="created" value="QWx1bm87VVBMMi0wMEE7MjAyNS0wMy0wNzsiMDc6NTY6MjkgIjsyMjEx"/>
+        <attribute name="edited" value="QWx1bm87VVBMMi0wMEE7MjAyNS0wMy0wNzsiMDk6MjU6NDggIjsxOzIzMTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;SETUP&quot;" newline="True"/>
+            <declare name="pinMode13" type="String" array="False" size=""/>
+            <assign variable="pinMode13" expression="&quot;OUTPUT&quot;"/>
+            <output expression="&quot;pinMode13 tem o valor igual &#224;: &quot; &amp; pinMode13" newline="True"/>
+            <output expression="&quot;loop&quot;" newline="True"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="999" direction="inc" step="1">
+                <output expression="&quot;LIGAR O TERMINAL 13&quot;" newline="True"/>
+                <output expression="&quot;DELAY DE 1 SEGUNDO&quot;" newline="True"/>
+                <output expression="&quot;DESLIGAR TERMINAL 13&quot;" newline="True"/>
+                <output expression="&quot;DELAY 1 SEGUNDO&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
